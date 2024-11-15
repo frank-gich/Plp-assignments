@@ -6,14 +6,17 @@ and print the result.
 Example: If a user inputs 10, 5, and +, 
 your program should display 10 + 5 = 15.
 
-fun arithmeticOperations(a, b):
-   a = input('enter number a')
-   b = input('enter number b')
 
-     sum = a + b
-      print(sum)
-     sub = a - b
-      print(sub)
+def arithmeticOperations(a, b):
+    sum = a + b
+    print(f'the sum of {a} + {b} = {sum}')
+    subtract = a - b
+    print(f'the sub of {a} - {b} = {subtract}')
     mult = a * b
-      print(mult)
-     
+    print(f'the multiplication of {a} x {b} = {mult}')
+    division = a/b
+    print(f'the division of {a} + {b} = {division}')
+a=int(input("enter number a:"))
+b=int(input("enter number b:"))
+
+print(arithmeticOperations(a,b))
