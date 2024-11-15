@@ -1,0 +1,211 @@
+void main() {
+      {
+           int number = 10;
+               double decim = 3.45;
+                   String names ="john";
+                       List work =["name",10];
+                           print(work[0]);
+                               print(number);
+                                   print(names);
+                                       print(decim);
+      }
+}
+class Converter {
+      // Convert a String to an int
+        static int stringToInt(String str) {
+                  return int.parse(str);
+        } 
+          // Convert a String to a double
+            static double stringToDouble(String str) {
+                      return double.parse(str);
+            } 
+
+              // Convert an int to a String
+                static String intToString(int num) {
+                        return num.toString();
+                }
+
+                  // Convert an int to a double
+                    static double intToDouble(int num) {
+                            return num.toDouble();
+                    }
+}
+
+void main() {
+      // Testing the functions
+        print(Converter.stringToInt("123"));        // Outputs: 123
+          print(Converter.stringToDouble("123.45"));  // Outputs: 123.45
+            print(Converter.intToString(123));          // Outputs: "123"
+              print(Converter.intToDouble(123));          // Outputs: 123.0
+}
+
+void convertAndDisplay(String numberString) {
+      try {
+            // Convert String to int
+                int intValue = int.parse(numberString);
+                    print("Integer value: $intValue");
+      } catch (e) {
+            print("Error: '$numberString' is not a valid integer.");
+      }
+
+        try {
+                // Convert String to double
+                    double doubleValue = double.parse(numberString);
+                        print("Double value: $doubleValue");
+        } catch (e) {
+                print("Error: '$numberString' is not a valid double.");
+        }
+}
+
+void main() {
+      // Test the function with a sample input
+        convertAndDisplay("123");        // Should print both integer and double values
+          convertAndDisplay("123.45");     // Should print only the double value, error for integer
+            convertAndDisplay("abc");        // Should print errors for both conversions
+}
+ 
+ void main() {
+      // Part 1: If-Else Statements for number check
+        int number = 5; // Change this value to test with different numbers
+          if (number > 0) {
+                print("The number is positive.");
+          } else if (number < 0) {
+                print("The number is negative.");
+          } else {
+                print("The number is zero.");
+          }
+
+            // Part 2: If-Else Statements for voting eligibility
+              int age = 20; // Change this value to test with different ages
+                if (age >= 18) {
+                        print("You are eligible to vote.");
+                } else {
+                        print("You are not eligible to vote.");
+                }
+
+                  // Part 3: Switch Case for days of the week
+                    int day = 3; // Change this value to test with different days (1-7)
+                      switch (day) {
+                            case 1:
+                                  print("Monday");
+                                        break;
+                                            case 2:
+                                                  print("Tuesday");
+                                                        break;
+                                                            case 3:
+                                                                  print("Wednesday");
+                                                                        break;
+                                                                            case 4:
+                                                                                  print("Thursday");
+                                                                                        break;
+                                                                                            case 5:
+                                                                                                  print("Friday");
+                                                                                                        break;
+                                                                                                            case 6:
+                                                                                                                  print("Saturday");
+                                                                                                                        break;
+                                                                                                                            case 7:
+                                                                                                                                  print("Sunday");
+                                                                                                                                        break;
+                                                                                                                                            default:
+                                                                                                                                                  print("Invalid day");
+                      }
+
+                        // Part 4: Loops
+                          // For loop: Print numbers from 1 to 10
+                            print("\nFor loop (1 to 10):");
+                              for (int i = 1; i <= 10; i++) {
+                                    print(i);
+                              }
+                              void main() {
+                                  // Define a List of int numbers
+                                    List<int> numbers = [3, 12, 25, 8, 101, 56, 7];
+
+                                      // Use a for loop to iterate through the list
+                                        for (int number in numbers) {
+                                                // Print each number
+                                                    print("Number: \$number");
+
+                                                        // Use if-else statements to check if the number is even or odd
+                                                            if (number % 2 == 0) {
+                                                                      print("\$number is even.");
+                                                            } else {
+                                                                      print("\$number is odd.");
+                                                            }
+
+                                                                // Implement a switch statement to categorize numbers
+                                                                    switch (number) {
+                                                                              case 1:
+                                                                                    case 2:
+                                                                                          case 3:
+                                                                                                case 4:
+                                                                                                      case 5:
+                                                                                                            case 6:
+                                                                                                                  case 7:
+                                                                                                                        case 8:
+                                                                                                                              case 9:
+                                                                                                                                    case 10:
+                                                                                                                                            print("\$number is small.");
+                                                                                                                                                    break;
+                                                                                                                                                          default:
+                                                                                                                                                                  if (number >= 11 && number <= 100) {
+                                                                                                                                                                              print("\$number is medium.");
+                                                                                                                                                                  } else if (number >= 101) {
+                                                                                                                                                                              print("\$number is large.");
+                                                                                                                                                                  } else {
+                                                                                                                                                                              print("\$number is out of range.");
+                                                                                                                                                                  }
+                                                                    }
+
+                                                                        print(""); // Print a blank line for readability
+                                        }
+                              }
+                                
+                                  // While loop: Print numbers from 10 to 1
+                                    print("\nWhile loop (10 to 1):");
+                                      int j = 10;
+                                        while (j >= 1) {
+                                                print(j);
+                                                    j--;
+                                        }
+
+                                          // Do-while loop: Print numbers from 1 to 5
+                                            print("\nDo-while loop (1 to 5):");
+                                              int k = 1;
+                                                do {
+                                                        print(k);
+                                                            k++;
+                                                } while (k <= 5);
+ }
+                                                }
+                                        }
+                                                                                                                                                                  }
+                                                                                                                                                                  }
+                                                                                                                                                                  }
+                                                                    }
+                                                            }
+                                                            }
+                                        }
+                              }
+                              }
+                      }
+                }
+                }
+          }
+          }
+          }
+ }
+}
+        }
+        }
+      }
+      }
+}
+}
+                    }
+                }
+            }
+        }
+}
+      }
+}
