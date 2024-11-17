@@ -8,9 +8,20 @@ Find and print the index of the value 30 in my_list
 
 my_list = []
 a =  10, 20, 30, 40
+ 
 for i in a:
-  my_list.apend(i)
+  my_list.append(i)
+print(my_list)
 my_list.insert(1,15)
 print(my_list)
 b_list = [50, 60, 70]
 my_list.extend(b_list)
+del my_list[-1]
+# ascending
+my_list.sort()
+# descending order
+my_list.sort(reverse=True)
+Find and print the index of the value 30 in my_list
+c=my_list.index(30)
+print(c)
+print(my_list)
